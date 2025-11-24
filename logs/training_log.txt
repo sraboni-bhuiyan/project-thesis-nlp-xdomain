@@ -1,0 +1,1083 @@
+2025-11-11 16:12:46,118 - INFO - 
+================================================================================
+2025-11-11 16:12:46,118 - INFO - EXPERIMENT STARTED: Cross-Domain Sentiment Analysis
+2025-11-11 16:12:46,118 - INFO - Time: 2025-11-11 16:12:46
+2025-11-11 16:12:46,204 - INFO - GPU Available: True
+2025-11-11 16:12:46,220 - INFO - GPU Name: NVIDIA GeForce RTX 5060 Laptop GPU
+2025-11-11 16:12:46,220 - INFO - GPU Memory: 8.55 GB
+2025-11-11 16:12:46,220 - INFO - Random Seed: 42 (reproducibility)
+2025-11-11 16:12:46,220 - INFO - ================================================================================
+
+2025-11-11 16:12:46,220 - INFO - PHASE 1: IN-DOMAIN TRAINING (24 runs: 6 models × 4 datasets)
+2025-11-11 16:12:46,222 - INFO - --------------------------------------------------------------------------------
+2025-11-11 16:12:46,222 - INFO - 
+================================================================================
+2025-11-11 16:12:46,222 - INFO - START TRAINING: ALBERT on AMAZON_COMBINED
+2025-11-11 16:12:46,222 - INFO - Timestamp: 2025-11-11 16:12:46
+2025-11-11 16:12:46,222 - INFO - GPU Available: True
+2025-11-11 16:12:46,222 - INFO - ================================================================================
+2025-11-11 16:12:46,222 - INFO - Loading model and tokenizer: albert-base-v2
+2025-11-11 16:12:47,908 - INFO -  Model & Tokenizer loaded in 1.69s
+2025-11-11 16:12:47,918 - INFO - Loading datasets: amazon_combined
+2025-11-11 16:12:48,004 - INFO -  Datasets loaded in 0.09s
+2025-11-11 16:12:48,004 - INFO -   Train samples: 5396 | Val samples: 675
+2025-11-11 16:12:48,004 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:12:48,620 - INFO -  Tokenization completed in 0.62s
+2025-11-11 16:12:48,620 - INFO - Setting up training configuration:
+2025-11-11 16:12:48,620 - INFO -   Learning rate: 2e-5
+2025-11-11 16:12:48,620 - INFO -   Batch size: 8
+2025-11-11 16:12:48,620 - INFO -   Epochs: 4
+2025-11-11 16:12:48,620 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:12:48,620 - INFO -   Device: GPU
+2025-11-11 16:12:49,025 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:17:17,748 - INFO -  Training completed in 4.48 minutes (268.72s)
+2025-11-11 16:17:17,748 - INFO - Saving model to: ../outputs/models/albert_amazon_combined
+2025-11-11 16:17:17,829 - INFO - Model saved in 0.08s
+2025-11-11 16:17:17,829 - INFO - Evaluating on validation set...
+2025-11-11 16:17:20,967 - INFO - Validation evaluation completed in 3.14s
+2025-11-11 16:17:20,967 - INFO - Results:
+2025-11-11 16:17:20,968 - INFO -   -- Macro-F1:    0.7272
+2025-11-11 16:17:20,968 - INFO -   -- Weighted-F1: 0.7273
+2025-11-11 16:17:20,968 - INFO -   -- Accuracy:    0.7289
+2025-11-11 16:17:20,972 - INFO - 
+================================================================================
+2025-11-11 16:17:20,972 - INFO - TRAINING COMPLETED: ALBERT on AMAZON_COMBINED
+2025-11-11 16:17:20,972 - INFO - Total Pipeline Time: 4.58 minutes (274.75s)
+2025-11-11 16:17:20,972 - INFO - 
+Timing Breakdown:
+2025-11-11 16:17:20,972 - INFO -   Model Load:          1.69s
+2025-11-11 16:17:20,972 - INFO -   Data Load:           0.09s
+2025-11-11 16:17:20,972 - INFO -   Tokenization:        0.62s
+2025-11-11 16:17:20,972 - INFO -   Training:          268.72s (4.5 min)  ← MAIN TIMING
+2025-11-11 16:17:20,972 - INFO -   Evaluation:          3.14s
+2025-11-11 16:17:20,973 - INFO -   Model Save:          0.08s
+2025-11-11 16:17:20,973 - INFO - ================================================================================
+
+2025-11-11 16:17:21,153 - INFO - 
+================================================================================
+2025-11-11 16:17:21,153 - INFO - START TRAINING: ALBERT on IMDB
+2025-11-11 16:17:21,153 - INFO - Timestamp: 2025-11-11 16:17:21
+2025-11-11 16:17:21,153 - INFO - GPU Available: True
+2025-11-11 16:17:21,153 - INFO - ================================================================================
+2025-11-11 16:17:21,153 - INFO - Loading model and tokenizer: albert-base-v2
+2025-11-11 16:17:23,114 - INFO -  Model & Tokenizer loaded in 1.96s
+2025-11-11 16:17:23,116 - INFO - Loading datasets: imdb
+2025-11-11 16:17:23,215 - INFO -  Datasets loaded in 0.10s
+2025-11-11 16:17:23,216 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 16:17:23,216 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:17:24,205 - INFO -  Tokenization completed in 0.99s
+2025-11-11 16:17:24,205 - INFO - Setting up training configuration:
+2025-11-11 16:17:24,205 - INFO -   Learning rate: 2e-5
+2025-11-11 16:17:24,205 - INFO -   Batch size: 8
+2025-11-11 16:17:24,205 - INFO -   Epochs: 4
+2025-11-11 16:17:24,205 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:17:24,205 - INFO -   Device: GPU
+2025-11-11 16:17:24,294 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:21:55,440 - INFO -  Training completed in 4.52 minutes (271.15s)
+2025-11-11 16:21:55,440 - INFO - Saving model to: ../outputs/models/albert_imdb
+2025-11-11 16:21:55,490 - INFO - Model saved in 0.05s
+2025-11-11 16:21:55,491 - INFO - Evaluating on validation set...
+2025-11-11 16:21:58,498 - INFO - Validation evaluation completed in 3.01s
+2025-11-11 16:21:58,498 - INFO - Results:
+2025-11-11 16:21:58,508 - INFO -   -- Macro-F1:    0.9142
+2025-11-11 16:21:58,508 - INFO -   -- Weighted-F1: 0.9142
+2025-11-11 16:21:58,508 - INFO -   -- Accuracy:    0.9142
+2025-11-11 16:21:58,508 - INFO - 
+================================================================================
+2025-11-11 16:21:58,508 - INFO - TRAINING COMPLETED: ALBERT on IMDB
+2025-11-11 16:21:58,508 - INFO - Total Pipeline Time: 4.62 minutes (277.36s)
+2025-11-11 16:21:58,508 - INFO - 
+Timing Breakdown:
+2025-11-11 16:21:58,508 - INFO -   Model Load:          1.96s
+2025-11-11 16:21:58,508 - INFO -   Data Load:           0.10s
+2025-11-11 16:21:58,508 - INFO -   Tokenization:        0.99s
+2025-11-11 16:21:58,512 - INFO -   Training:          271.15s (4.5 min)  ← MAIN TIMING
+2025-11-11 16:21:58,512 - INFO -   Evaluation:          3.01s
+2025-11-11 16:21:58,512 - INFO -   Model Save:          0.05s
+2025-11-11 16:21:58,512 - INFO - ================================================================================
+
+2025-11-11 16:21:58,685 - INFO - 
+================================================================================
+2025-11-11 16:21:58,685 - INFO - START TRAINING: ALBERT on REDDIT
+2025-11-11 16:21:58,685 - INFO - Timestamp: 2025-11-11 16:21:58
+2025-11-11 16:21:58,686 - INFO - GPU Available: True
+2025-11-11 16:21:58,686 - INFO - ================================================================================
+2025-11-11 16:21:58,686 - INFO - Loading model and tokenizer: albert-base-v2
+2025-11-11 16:22:00,318 - INFO -  Model & Tokenizer loaded in 1.63s
+2025-11-11 16:22:00,318 - INFO - Loading datasets: reddit
+2025-11-11 16:22:00,373 - INFO -  Datasets loaded in 0.05s
+2025-11-11 16:22:00,373 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 16:22:00,374 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:22:00,900 - INFO -  Tokenization completed in 0.53s
+2025-11-11 16:22:00,900 - INFO - Setting up training configuration:
+2025-11-11 16:22:00,900 - INFO -   Learning rate: 2e-5
+2025-11-11 16:22:00,901 - INFO -   Batch size: 8
+2025-11-11 16:22:00,901 - INFO -   Epochs: 4
+2025-11-11 16:22:00,901 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:22:00,901 - INFO -   Device: GPU
+2025-11-11 16:22:00,970 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:26:27,625 - INFO -  Training completed in 4.44 minutes (266.65s)
+2025-11-11 16:26:27,625 - INFO - Saving model to: ../outputs/models/albert_reddit
+2025-11-11 16:26:27,665 - INFO - Model saved in 0.04s
+2025-11-11 16:26:27,665 - INFO - Evaluating on validation set...
+2025-11-11 16:26:30,717 - INFO - Validation evaluation completed in 3.05s
+2025-11-11 16:26:30,717 - INFO - Results:
+2025-11-11 16:26:30,717 - INFO -   -- Macro-F1:    0.3046
+2025-11-11 16:26:30,717 - INFO -   -- Weighted-F1: 0.3048
+2025-11-11 16:26:30,717 - INFO -   -- Accuracy:    0.3728
+2025-11-11 16:26:30,720 - INFO - 
+================================================================================
+2025-11-11 16:26:30,720 - INFO - TRAINING COMPLETED: ALBERT on REDDIT
+2025-11-11 16:26:30,720 - INFO - Total Pipeline Time: 4.53 minutes (272.03s)
+2025-11-11 16:26:30,720 - INFO - 
+Timing Breakdown:
+2025-11-11 16:26:30,720 - INFO -   Model Load:          1.63s
+2025-11-11 16:26:30,721 - INFO -   Data Load:           0.05s
+2025-11-11 16:26:30,721 - INFO -   Tokenization:        0.53s
+2025-11-11 16:26:30,721 - INFO -   Training:          266.65s (4.4 min)  ← MAIN TIMING
+2025-11-11 16:26:30,721 - INFO -   Evaluation:          3.05s
+2025-11-11 16:26:30,721 - INFO -   Model Save:          0.04s
+2025-11-11 16:26:30,721 - INFO - ================================================================================
+
+2025-11-11 16:26:30,904 - INFO - 
+================================================================================
+2025-11-11 16:26:30,904 - INFO - START TRAINING: ALBERT on SENTIMENT140
+2025-11-11 16:26:30,904 - INFO - Timestamp: 2025-11-11 16:26:30
+2025-11-11 16:26:30,904 - INFO - GPU Available: True
+2025-11-11 16:26:30,904 - INFO - ================================================================================
+2025-11-11 16:26:30,904 - INFO - Loading model and tokenizer: albert-base-v2
+2025-11-11 16:26:32,601 - INFO -  Model & Tokenizer loaded in 1.70s
+2025-11-11 16:26:32,601 - INFO - Loading datasets: sentiment140
+2025-11-11 16:26:32,663 - INFO -  Datasets loaded in 0.06s
+2025-11-11 16:26:32,663 - INFO -   Train samples: 5394 | Val samples: 675
+2025-11-11 16:26:32,663 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:26:33,121 - INFO -  Tokenization completed in 0.46s
+2025-11-11 16:26:33,121 - INFO - Setting up training configuration:
+2025-11-11 16:26:33,121 - INFO -   Learning rate: 2e-5
+2025-11-11 16:26:33,122 - INFO -   Batch size: 8
+2025-11-11 16:26:33,122 - INFO -   Epochs: 4
+2025-11-11 16:26:33,122 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:26:33,122 - INFO -   Device: GPU
+2025-11-11 16:26:33,185 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:31:04,125 - INFO -  Training completed in 4.52 minutes (270.94s)
+2025-11-11 16:31:04,125 - INFO - Saving model to: ../outputs/models/albert_sentiment140
+2025-11-11 16:31:04,160 - INFO - Model saved in 0.04s
+2025-11-11 16:31:04,160 - INFO - Evaluating on validation set...
+2025-11-11 16:31:07,215 - INFO - Validation evaluation completed in 3.05s
+2025-11-11 16:31:07,215 - INFO - Results:
+2025-11-11 16:31:07,215 - INFO -   -- Macro-F1:    0.8311
+2025-11-11 16:31:07,215 - INFO -   -- Weighted-F1: 0.8311
+2025-11-11 16:31:07,215 - INFO -   -- Accuracy:    0.8311
+2025-11-11 16:31:07,215 - INFO - 
+================================================================================
+2025-11-11 16:31:07,215 - INFO - TRAINING COMPLETED: ALBERT on SENTIMENT140
+2025-11-11 16:31:07,215 - INFO - Total Pipeline Time: 4.61 minutes (276.32s)
+2025-11-11 16:31:07,215 - INFO - 
+Timing Breakdown:
+2025-11-11 16:31:07,215 - INFO -   Model Load:          1.70s
+2025-11-11 16:31:07,220 - INFO -   Data Load:           0.06s
+2025-11-11 16:31:07,220 - INFO -   Tokenization:        0.46s
+2025-11-11 16:31:07,220 - INFO -   Training:          270.94s (4.5 min)  ← MAIN TIMING
+2025-11-11 16:31:07,220 - INFO -   Evaluation:          3.05s
+2025-11-11 16:31:07,220 - INFO -   Model Save:          0.04s
+2025-11-11 16:31:07,220 - INFO - ================================================================================
+
+2025-11-11 16:31:07,390 - INFO - 
+================================================================================
+2025-11-11 16:31:07,390 - INFO - START TRAINING: BERT on AMAZON_COMBINED
+2025-11-11 16:31:07,390 - INFO - Timestamp: 2025-11-11 16:31:07
+2025-11-11 16:31:07,390 - INFO - GPU Available: True
+2025-11-11 16:31:07,390 - INFO - ================================================================================
+2025-11-11 16:31:07,390 - INFO - Loading model and tokenizer: bert-base-uncased
+2025-11-11 16:31:08,286 - INFO -  Model & Tokenizer loaded in 0.90s
+2025-11-11 16:31:08,286 - INFO - Loading datasets: amazon_combined
+2025-11-11 16:31:08,333 - INFO -  Datasets loaded in 0.05s
+2025-11-11 16:31:08,334 - INFO -   Train samples: 5396 | Val samples: 675
+2025-11-11 16:31:08,334 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:31:08,798 - INFO -  Tokenization completed in 0.46s
+2025-11-11 16:31:08,798 - INFO - Setting up training configuration:
+2025-11-11 16:31:08,798 - INFO -   Learning rate: 2e-5
+2025-11-11 16:31:08,798 - INFO -   Batch size: 8
+2025-11-11 16:31:08,798 - INFO -   Epochs: 4
+2025-11-11 16:31:08,798 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:31:08,798 - INFO -   Device: GPU
+2025-11-11 16:31:09,383 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:35:19,724 - INFO -  Training completed in 4.17 minutes (250.34s)
+2025-11-11 16:35:19,725 - INFO - Saving model to: ../outputs/models/bert_amazon_combined
+2025-11-11 16:35:20,018 - INFO - Model saved in 0.29s
+2025-11-11 16:35:20,028 - INFO - Evaluating on validation set...
+2025-11-11 16:35:22,075 - INFO - Validation evaluation completed in 2.05s
+2025-11-11 16:35:22,075 - INFO - Results:
+2025-11-11 16:35:22,075 - INFO -   -- Macro-F1:    0.7406
+2025-11-11 16:35:22,075 - INFO -   -- Weighted-F1: 0.7407
+2025-11-11 16:35:22,077 - INFO -   -- Accuracy:    0.7393
+2025-11-11 16:35:22,078 - INFO - 
+================================================================================
+2025-11-11 16:35:22,078 - INFO - TRAINING COMPLETED: BERT on AMAZON_COMBINED
+2025-11-11 16:35:22,078 - INFO - Total Pipeline Time: 4.24 minutes (254.69s)
+2025-11-11 16:35:22,078 - INFO - 
+Timing Breakdown:
+2025-11-11 16:35:22,078 - INFO -   Model Load:          0.90s
+2025-11-11 16:35:22,078 - INFO -   Data Load:           0.05s
+2025-11-11 16:35:22,078 - INFO -   Tokenization:        0.46s
+2025-11-11 16:35:22,079 - INFO -   Training:          250.34s (4.2 min)  ← MAIN TIMING
+2025-11-11 16:35:22,079 - INFO -   Evaluation:          2.05s
+2025-11-11 16:35:22,079 - INFO -   Model Save:          0.29s
+2025-11-11 16:35:22,079 - INFO - ================================================================================
+
+2025-11-11 16:35:22,235 - INFO - 
+================================================================================
+2025-11-11 16:35:22,235 - INFO - START TRAINING: BERT on IMDB
+2025-11-11 16:35:22,235 - INFO - Timestamp: 2025-11-11 16:35:22
+2025-11-11 16:35:22,235 - INFO - GPU Available: True
+2025-11-11 16:35:22,235 - INFO - ================================================================================
+2025-11-11 16:35:22,235 - INFO - Loading model and tokenizer: bert-base-uncased
+2025-11-11 16:35:23,335 - INFO -  Model & Tokenizer loaded in 1.10s
+2025-11-11 16:35:23,335 - INFO - Loading datasets: imdb
+2025-11-11 16:35:23,426 - INFO -  Datasets loaded in 0.09s
+2025-11-11 16:35:23,427 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 16:35:23,427 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:35:24,251 - INFO -  Tokenization completed in 0.82s
+2025-11-11 16:35:24,251 - INFO - Setting up training configuration:
+2025-11-11 16:35:24,251 - INFO -   Learning rate: 2e-5
+2025-11-11 16:35:24,251 - INFO -   Batch size: 8
+2025-11-11 16:35:24,251 - INFO -   Epochs: 4
+2025-11-11 16:35:24,251 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:35:24,253 - INFO -   Device: GPU
+2025-11-11 16:35:24,499 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:39:44,115 - INFO -  Training completed in 4.33 minutes (259.62s)
+2025-11-11 16:39:44,115 - INFO - Saving model to: ../outputs/models/bert_imdb
+2025-11-11 16:39:44,501 - INFO - Model saved in 0.39s
+2025-11-11 16:39:44,501 - INFO - Evaluating on validation set...
+2025-11-11 16:39:46,709 - INFO - Validation evaluation completed in 2.21s
+2025-11-11 16:39:46,709 - INFO - Results:
+2025-11-11 16:39:46,711 - INFO -   -- Macro-F1:    0.9097
+2025-11-11 16:39:46,711 - INFO -   -- Weighted-F1: 0.9097
+2025-11-11 16:39:46,711 - INFO -   -- Accuracy:    0.9098
+2025-11-11 16:39:46,711 - INFO - 
+================================================================================
+2025-11-11 16:39:46,711 - INFO - TRAINING COMPLETED: BERT on IMDB
+2025-11-11 16:39:46,711 - INFO - Total Pipeline Time: 4.41 minutes (264.48s)
+2025-11-11 16:39:46,711 - INFO - 
+Timing Breakdown:
+2025-11-11 16:39:46,711 - INFO -   Model Load:          1.10s
+2025-11-11 16:39:46,711 - INFO -   Data Load:           0.09s
+2025-11-11 16:39:46,713 - INFO -   Tokenization:        0.82s
+2025-11-11 16:39:46,713 - INFO -   Training:          259.62s (4.3 min)  ← MAIN TIMING
+2025-11-11 16:39:46,713 - INFO -   Evaluation:          2.21s
+2025-11-11 16:39:46,713 - INFO -   Model Save:          0.39s
+2025-11-11 16:39:46,713 - INFO - ================================================================================
+
+2025-11-11 16:39:46,905 - INFO - 
+================================================================================
+2025-11-11 16:39:46,905 - INFO - START TRAINING: BERT on REDDIT
+2025-11-11 16:39:46,905 - INFO - Timestamp: 2025-11-11 16:39:46
+2025-11-11 16:39:46,905 - INFO - GPU Available: True
+2025-11-11 16:39:46,905 - INFO - ================================================================================
+2025-11-11 16:39:46,905 - INFO - Loading model and tokenizer: bert-base-uncased
+2025-11-11 16:39:48,538 - INFO -  Model & Tokenizer loaded in 1.63s
+2025-11-11 16:39:48,538 - INFO - Loading datasets: reddit
+2025-11-11 16:39:48,590 - INFO -  Datasets loaded in 0.05s
+2025-11-11 16:39:48,590 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 16:39:48,590 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:39:49,327 - INFO -  Tokenization completed in 0.74s
+2025-11-11 16:39:49,327 - INFO - Setting up training configuration:
+2025-11-11 16:39:49,327 - INFO -   Learning rate: 2e-5
+2025-11-11 16:39:49,327 - INFO -   Batch size: 8
+2025-11-11 16:39:49,327 - INFO -   Epochs: 4
+2025-11-11 16:39:49,327 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:39:49,327 - INFO -   Device: GPU
+2025-11-11 16:39:49,711 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:44:23,681 - INFO -  Training completed in 4.57 minutes (273.97s)
+2025-11-11 16:44:23,681 - INFO - Saving model to: ../outputs/models/bert_reddit
+2025-11-11 16:44:24,052 - INFO - Model saved in 0.37s
+2025-11-11 16:44:24,052 - INFO - Evaluating on validation set...
+2025-11-11 16:44:26,420 - INFO - Validation evaluation completed in 2.37s
+2025-11-11 16:44:26,420 - INFO - Results:
+2025-11-11 16:44:26,420 - INFO -   -- Macro-F1:    0.3994
+2025-11-11 16:44:26,420 - INFO -   -- Weighted-F1: 0.3995
+2025-11-11 16:44:26,420 - INFO -   -- Accuracy:    0.3994
+2025-11-11 16:44:26,422 - INFO - 
+================================================================================
+2025-11-11 16:44:26,422 - INFO - TRAINING COMPLETED: BERT on REDDIT
+2025-11-11 16:44:26,422 - INFO - Total Pipeline Time: 4.66 minutes (279.51s)
+2025-11-11 16:44:26,423 - INFO - 
+Timing Breakdown:
+2025-11-11 16:44:26,423 - INFO -   Model Load:          1.63s
+2025-11-11 16:44:26,423 - INFO -   Data Load:           0.05s
+2025-11-11 16:44:26,423 - INFO -   Tokenization:        0.74s
+2025-11-11 16:44:26,423 - INFO -   Training:          273.97s (4.6 min)  ← MAIN TIMING
+2025-11-11 16:44:26,423 - INFO -   Evaluation:          2.37s
+2025-11-11 16:44:26,423 - INFO -   Model Save:          0.37s
+2025-11-11 16:44:26,423 - INFO - ================================================================================
+
+2025-11-11 16:44:26,621 - INFO - 
+================================================================================
+2025-11-11 16:44:26,621 - INFO - START TRAINING: BERT on SENTIMENT140
+2025-11-11 16:44:26,623 - INFO - Timestamp: 2025-11-11 16:44:26
+2025-11-11 16:44:26,623 - INFO - GPU Available: True
+2025-11-11 16:44:26,623 - INFO - ================================================================================
+2025-11-11 16:44:26,623 - INFO - Loading model and tokenizer: bert-base-uncased
+2025-11-11 16:44:28,588 - INFO -  Model & Tokenizer loaded in 1.96s
+2025-11-11 16:44:28,588 - INFO - Loading datasets: sentiment140
+2025-11-11 16:44:28,653 - INFO -  Datasets loaded in 0.07s
+2025-11-11 16:44:28,653 - INFO -   Train samples: 5394 | Val samples: 675
+2025-11-11 16:44:28,653 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:44:29,519 - INFO -  Tokenization completed in 0.87s
+2025-11-11 16:44:29,519 - INFO - Setting up training configuration:
+2025-11-11 16:44:29,519 - INFO -   Learning rate: 2e-5
+2025-11-11 16:44:29,519 - INFO -   Batch size: 8
+2025-11-11 16:44:29,519 - INFO -   Epochs: 4
+2025-11-11 16:44:29,519 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:44:29,519 - INFO -   Device: GPU
+2025-11-11 16:44:29,856 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:48:37,250 - INFO -  Training completed in 4.12 minutes (247.39s)
+2025-11-11 16:48:37,250 - INFO - Saving model to: ../outputs/models/bert_sentiment140
+2025-11-11 16:48:37,634 - INFO - Model saved in 0.38s
+2025-11-11 16:48:37,634 - INFO - Evaluating on validation set...
+2025-11-11 16:48:39,529 - INFO - Validation evaluation completed in 1.89s
+2025-11-11 16:48:39,529 - INFO - Results:
+2025-11-11 16:48:39,529 - INFO -   -- Macro-F1:    0.8133
+2025-11-11 16:48:39,529 - INFO -   -- Weighted-F1: 0.8133
+2025-11-11 16:48:39,529 - INFO -   -- Accuracy:    0.8133
+2025-11-11 16:48:39,537 - INFO - 
+================================================================================
+2025-11-11 16:48:39,537 - INFO - TRAINING COMPLETED: BERT on SENTIMENT140
+2025-11-11 16:48:39,537 - INFO - Total Pipeline Time: 4.22 minutes (252.92s)
+2025-11-11 16:48:39,538 - INFO - 
+Timing Breakdown:
+2025-11-11 16:48:39,538 - INFO -   Model Load:          1.96s
+2025-11-11 16:48:39,538 - INFO -   Data Load:           0.07s
+2025-11-11 16:48:39,538 - INFO -   Tokenization:        0.87s
+2025-11-11 16:48:39,538 - INFO -   Training:          247.39s (4.1 min)  ← MAIN TIMING
+2025-11-11 16:48:39,538 - INFO -   Evaluation:          1.89s
+2025-11-11 16:48:39,538 - INFO -   Model Save:          0.38s
+2025-11-11 16:48:39,538 - INFO - ================================================================================
+
+2025-11-11 16:48:39,696 - INFO - 
+================================================================================
+2025-11-11 16:48:39,696 - INFO - START TRAINING: DISTILBERT on AMAZON_COMBINED
+2025-11-11 16:48:39,696 - INFO - Timestamp: 2025-11-11 16:48:39
+2025-11-11 16:48:39,696 - INFO - GPU Available: True
+2025-11-11 16:48:39,696 - INFO - ================================================================================
+2025-11-11 16:48:39,696 - INFO - Loading model and tokenizer: distilbert-base-uncased
+2025-11-11 16:48:41,503 - INFO -  Model & Tokenizer loaded in 1.81s
+2025-11-11 16:48:41,503 - INFO - Loading datasets: amazon_combined
+2025-11-11 16:48:41,550 - INFO -  Datasets loaded in 0.05s
+2025-11-11 16:48:41,550 - INFO -   Train samples: 5396 | Val samples: 675
+2025-11-11 16:48:41,550 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:48:41,947 - INFO -  Tokenization completed in 0.40s
+2025-11-11 16:48:41,947 - INFO - Setting up training configuration:
+2025-11-11 16:48:41,947 - INFO -   Learning rate: 2e-5
+2025-11-11 16:48:41,947 - INFO -   Batch size: 8
+2025-11-11 16:48:41,948 - INFO -   Epochs: 4
+2025-11-11 16:48:41,948 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:48:41,948 - INFO -   Device: GPU
+2025-11-11 16:48:42,314 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:50:57,552 - INFO -  Training completed in 2.25 minutes (135.24s)
+2025-11-11 16:50:57,552 - INFO - Saving model to: ../outputs/models/distilbert_amazon_combined
+2025-11-11 16:50:57,811 - INFO - Model saved in 0.26s
+2025-11-11 16:50:57,811 - INFO - Evaluating on validation set...
+2025-11-11 16:50:59,030 - INFO - Validation evaluation completed in 1.22s
+2025-11-11 16:50:59,030 - INFO - Results:
+2025-11-11 16:50:59,030 - INFO -   -- Macro-F1:    0.7392
+2025-11-11 16:50:59,030 - INFO -   -- Weighted-F1: 0.7393
+2025-11-11 16:50:59,030 - INFO -   -- Accuracy:    0.7378
+2025-11-11 16:50:59,034 - INFO - 
+================================================================================
+2025-11-11 16:50:59,035 - INFO - TRAINING COMPLETED: DISTILBERT on AMAZON_COMBINED
+2025-11-11 16:50:59,035 - INFO - Total Pipeline Time: 2.32 minutes (139.34s)
+2025-11-11 16:50:59,035 - INFO - 
+Timing Breakdown:
+2025-11-11 16:50:59,035 - INFO -   Model Load:          1.81s
+2025-11-11 16:50:59,035 - INFO -   Data Load:           0.05s
+2025-11-11 16:50:59,035 - INFO -   Tokenization:        0.40s
+2025-11-11 16:50:59,035 - INFO -   Training:          135.24s (2.3 min)  ← MAIN TIMING
+2025-11-11 16:50:59,036 - INFO -   Evaluation:          1.22s
+2025-11-11 16:50:59,036 - INFO -   Model Save:          0.26s
+2025-11-11 16:50:59,036 - INFO - ================================================================================
+
+2025-11-11 16:50:59,218 - INFO - 
+================================================================================
+2025-11-11 16:50:59,218 - INFO - START TRAINING: DISTILBERT on IMDB
+2025-11-11 16:50:59,218 - INFO - Timestamp: 2025-11-11 16:50:59
+2025-11-11 16:50:59,218 - INFO - GPU Available: True
+2025-11-11 16:50:59,218 - INFO - ================================================================================
+2025-11-11 16:50:59,218 - INFO - Loading model and tokenizer: distilbert-base-uncased
+2025-11-11 16:51:00,754 - INFO -  Model & Tokenizer loaded in 1.54s
+2025-11-11 16:51:00,754 - INFO - Loading datasets: imdb
+2025-11-11 16:51:00,898 - INFO -  Datasets loaded in 0.14s
+2025-11-11 16:51:00,898 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 16:51:00,898 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:51:01,787 - INFO -  Tokenization completed in 0.89s
+2025-11-11 16:51:01,787 - INFO - Setting up training configuration:
+2025-11-11 16:51:01,787 - INFO -   Learning rate: 2e-5
+2025-11-11 16:51:01,787 - INFO -   Batch size: 8
+2025-11-11 16:51:01,787 - INFO -   Epochs: 4
+2025-11-11 16:51:01,797 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:51:01,797 - INFO -   Device: GPU
+2025-11-11 16:51:01,995 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:53:18,940 - INFO -  Training completed in 2.28 minutes (136.94s)
+2025-11-11 16:53:18,940 - INFO - Saving model to: ../outputs/models/distilbert_imdb
+2025-11-11 16:53:19,195 - INFO - Model saved in 0.26s
+2025-11-11 16:53:19,195 - INFO - Evaluating on validation set...
+2025-11-11 16:53:20,364 - INFO - Validation evaluation completed in 1.17s
+2025-11-11 16:53:20,364 - INFO - Results:
+2025-11-11 16:53:20,364 - INFO -   -- Macro-F1:    0.8979
+2025-11-11 16:53:20,364 - INFO -   -- Weighted-F1: 0.8979
+2025-11-11 16:53:20,364 - INFO -   -- Accuracy:    0.8979
+2025-11-11 16:53:20,369 - INFO - 
+================================================================================
+2025-11-11 16:53:20,369 - INFO - TRAINING COMPLETED: DISTILBERT on IMDB
+2025-11-11 16:53:20,370 - INFO - Total Pipeline Time: 2.35 minutes (141.15s)
+2025-11-11 16:53:20,370 - INFO - 
+Timing Breakdown:
+2025-11-11 16:53:20,370 - INFO -   Model Load:          1.54s
+2025-11-11 16:53:20,370 - INFO -   Data Load:           0.14s
+2025-11-11 16:53:20,370 - INFO -   Tokenization:        0.89s
+2025-11-11 16:53:20,371 - INFO -   Training:          136.94s (2.3 min)  ← MAIN TIMING
+2025-11-11 16:53:20,371 - INFO -   Evaluation:          1.17s
+2025-11-11 16:53:20,371 - INFO -   Model Save:          0.26s
+2025-11-11 16:53:20,371 - INFO - ================================================================================
+
+2025-11-11 16:53:20,541 - INFO - 
+================================================================================
+2025-11-11 16:53:20,541 - INFO - START TRAINING: DISTILBERT on REDDIT
+2025-11-11 16:53:20,541 - INFO - Timestamp: 2025-11-11 16:53:20
+2025-11-11 16:53:20,541 - INFO - GPU Available: True
+2025-11-11 16:53:20,541 - INFO - ================================================================================
+2025-11-11 16:53:20,541 - INFO - Loading model and tokenizer: distilbert-base-uncased
+2025-11-11 16:53:22,003 - INFO -  Model & Tokenizer loaded in 1.46s
+2025-11-11 16:53:22,003 - INFO - Loading datasets: reddit
+2025-11-11 16:53:22,053 - INFO -  Datasets loaded in 0.05s
+2025-11-11 16:53:22,053 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 16:53:22,053 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:53:22,599 - INFO -  Tokenization completed in 0.55s
+2025-11-11 16:53:22,599 - INFO - Setting up training configuration:
+2025-11-11 16:53:22,599 - INFO -   Learning rate: 2e-5
+2025-11-11 16:53:22,599 - INFO -   Batch size: 8
+2025-11-11 16:53:22,599 - INFO -   Epochs: 4
+2025-11-11 16:53:22,599 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:53:22,599 - INFO -   Device: GPU
+2025-11-11 16:53:22,827 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:55:37,774 - INFO -  Training completed in 2.25 minutes (134.95s)
+2025-11-11 16:55:37,778 - INFO - Saving model to: ../outputs/models/distilbert_reddit
+2025-11-11 16:55:38,072 - INFO - Model saved in 0.29s
+2025-11-11 16:55:38,072 - INFO - Evaluating on validation set...
+2025-11-11 16:55:39,276 - INFO - Validation evaluation completed in 1.20s
+2025-11-11 16:55:39,276 - INFO - Results:
+2025-11-11 16:55:39,276 - INFO -   -- Macro-F1:    0.4104
+2025-11-11 16:55:39,277 - INFO -   -- Weighted-F1: 0.4104
+2025-11-11 16:55:39,277 - INFO -   -- Accuracy:    0.4112
+2025-11-11 16:55:39,278 - INFO - 
+================================================================================
+2025-11-11 16:55:39,279 - INFO - TRAINING COMPLETED: DISTILBERT on REDDIT
+2025-11-11 16:55:39,279 - INFO - Total Pipeline Time: 2.31 minutes (138.74s)
+2025-11-11 16:55:39,279 - INFO - 
+Timing Breakdown:
+2025-11-11 16:55:39,279 - INFO -   Model Load:          1.46s
+2025-11-11 16:55:39,279 - INFO -   Data Load:           0.05s
+2025-11-11 16:55:39,280 - INFO -   Tokenization:        0.55s
+2025-11-11 16:55:39,280 - INFO -   Training:          134.95s (2.2 min)  ← MAIN TIMING
+2025-11-11 16:55:39,280 - INFO -   Evaluation:          1.20s
+2025-11-11 16:55:39,280 - INFO -   Model Save:          0.29s
+2025-11-11 16:55:39,280 - INFO - ================================================================================
+
+2025-11-11 16:55:39,454 - INFO - 
+================================================================================
+2025-11-11 16:55:39,454 - INFO - START TRAINING: DISTILBERT on SENTIMENT140
+2025-11-11 16:55:39,454 - INFO - Timestamp: 2025-11-11 16:55:39
+2025-11-11 16:55:39,454 - INFO - GPU Available: True
+2025-11-11 16:55:39,454 - INFO - ================================================================================
+2025-11-11 16:55:39,454 - INFO - Loading model and tokenizer: distilbert-base-uncased
+2025-11-11 16:55:40,858 - INFO -  Model & Tokenizer loaded in 1.40s
+2025-11-11 16:55:40,858 - INFO - Loading datasets: sentiment140
+2025-11-11 16:55:40,908 - INFO -  Datasets loaded in 0.05s
+2025-11-11 16:55:40,908 - INFO -   Train samples: 5394 | Val samples: 675
+2025-11-11 16:55:40,908 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:55:41,419 - INFO -  Tokenization completed in 0.51s
+2025-11-11 16:55:41,419 - INFO - Setting up training configuration:
+2025-11-11 16:55:41,419 - INFO -   Learning rate: 2e-5
+2025-11-11 16:55:41,419 - INFO -   Batch size: 8
+2025-11-11 16:55:41,419 - INFO -   Epochs: 4
+2025-11-11 16:55:41,419 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:55:41,419 - INFO -   Device: GPU
+2025-11-11 16:55:41,668 - INFO - 
+Starting training loop on GPU...
+2025-11-11 16:57:56,186 - INFO -  Training completed in 2.24 minutes (134.52s)
+2025-11-11 16:57:56,186 - INFO - Saving model to: ../outputs/models/distilbert_sentiment140
+2025-11-11 16:57:56,407 - INFO - Model saved in 0.22s
+2025-11-11 16:57:56,407 - INFO - Evaluating on validation set...
+2025-11-11 16:57:57,546 - INFO - Validation evaluation completed in 1.14s
+2025-11-11 16:57:57,546 - INFO - Results:
+2025-11-11 16:57:57,546 - INFO -   -- Macro-F1:    0.8191
+2025-11-11 16:57:57,546 - INFO -   -- Weighted-F1: 0.8191
+2025-11-11 16:57:57,553 - INFO -   -- Accuracy:    0.8193
+2025-11-11 16:57:57,554 - INFO - 
+================================================================================
+2025-11-11 16:57:57,554 - INFO - TRAINING COMPLETED: DISTILBERT on SENTIMENT140
+2025-11-11 16:57:57,555 - INFO - Total Pipeline Time: 2.30 minutes (138.10s)
+2025-11-11 16:57:57,555 - INFO - 
+Timing Breakdown:
+2025-11-11 16:57:57,555 - INFO -   Model Load:          1.40s
+2025-11-11 16:57:57,555 - INFO -   Data Load:           0.05s
+2025-11-11 16:57:57,555 - INFO -   Tokenization:        0.51s
+2025-11-11 16:57:57,555 - INFO -   Training:          134.52s (2.2 min)  ← MAIN TIMING
+2025-11-11 16:57:57,556 - INFO -   Evaluation:          1.14s
+2025-11-11 16:57:57,556 - INFO -   Model Save:          0.22s
+2025-11-11 16:57:57,556 - INFO - ================================================================================
+
+2025-11-11 16:57:57,732 - INFO - 
+================================================================================
+2025-11-11 16:57:57,732 - INFO - START TRAINING: ELECTRA on AMAZON_COMBINED
+2025-11-11 16:57:57,732 - INFO - Timestamp: 2025-11-11 16:57:57
+2025-11-11 16:57:57,732 - INFO - GPU Available: True
+2025-11-11 16:57:57,732 - INFO - ================================================================================
+2025-11-11 16:57:57,732 - INFO - Loading model and tokenizer: google/electra-base-discriminator
+2025-11-11 16:57:59,811 - INFO -  Model & Tokenizer loaded in 2.08s
+2025-11-11 16:57:59,811 - INFO - Loading datasets: amazon_combined
+2025-11-11 16:57:59,863 - INFO -  Datasets loaded in 0.05s
+2025-11-11 16:57:59,863 - INFO -   Train samples: 5396 | Val samples: 675
+2025-11-11 16:57:59,863 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 16:58:00,590 - INFO -  Tokenization completed in 0.73s
+2025-11-11 16:58:00,590 - INFO - Setting up training configuration:
+2025-11-11 16:58:00,590 - INFO -   Learning rate: 2e-5
+2025-11-11 16:58:00,590 - INFO -   Batch size: 8
+2025-11-11 16:58:00,590 - INFO -   Epochs: 4
+2025-11-11 16:58:00,590 - INFO -   Mixed precision (FP16): True
+2025-11-11 16:58:00,590 - INFO -   Device: GPU
+2025-11-11 16:58:00,760 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:02:41,423 - INFO -  Training completed in 4.68 minutes (280.66s)
+2025-11-11 17:02:41,423 - INFO - Saving model to: ../outputs/models/electra_amazon_combined
+2025-11-11 17:02:41,853 - INFO - Model saved in 0.43s
+2025-11-11 17:02:41,863 - INFO - Evaluating on validation set...
+2025-11-11 17:02:44,362 - INFO - Validation evaluation completed in 2.50s
+2025-11-11 17:02:44,362 - INFO - Results:
+2025-11-11 17:02:44,362 - INFO -   -- Macro-F1:    0.7534
+2025-11-11 17:02:44,362 - INFO -   -- Weighted-F1: 0.7536
+2025-11-11 17:02:44,362 - INFO -   -- Accuracy:    0.7526
+2025-11-11 17:02:44,365 - INFO - 
+================================================================================
+2025-11-11 17:02:44,365 - INFO - TRAINING COMPLETED: ELECTRA on AMAZON_COMBINED
+2025-11-11 17:02:44,366 - INFO - Total Pipeline Time: 4.78 minutes (286.63s)
+2025-11-11 17:02:44,366 - INFO - 
+Timing Breakdown:
+2025-11-11 17:02:44,366 - INFO -   Model Load:          2.08s
+2025-11-11 17:02:44,366 - INFO -   Data Load:           0.05s
+2025-11-11 17:02:44,366 - INFO -   Tokenization:        0.73s
+2025-11-11 17:02:44,366 - INFO -   Training:          280.66s (4.7 min)  ← MAIN TIMING
+2025-11-11 17:02:44,367 - INFO -   Evaluation:          2.50s
+2025-11-11 17:02:44,367 - INFO -   Model Save:          0.43s
+2025-11-11 17:02:44,367 - INFO - ================================================================================
+
+2025-11-11 17:02:44,558 - INFO - 
+================================================================================
+2025-11-11 17:02:44,558 - INFO - START TRAINING: ELECTRA on IMDB
+2025-11-11 17:02:44,558 - INFO - Timestamp: 2025-11-11 17:02:44
+2025-11-11 17:02:44,558 - INFO - GPU Available: True
+2025-11-11 17:02:44,558 - INFO - ================================================================================
+2025-11-11 17:02:44,558 - INFO - Loading model and tokenizer: google/electra-base-discriminator
+2025-11-11 17:02:46,014 - INFO -  Model & Tokenizer loaded in 1.46s
+2025-11-11 17:02:46,014 - INFO - Loading datasets: imdb
+2025-11-11 17:02:46,134 - INFO -  Datasets loaded in 0.12s
+2025-11-11 17:02:46,134 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 17:02:46,134 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:02:47,205 - INFO -  Tokenization completed in 1.07s
+2025-11-11 17:02:47,205 - INFO - Setting up training configuration:
+2025-11-11 17:02:47,205 - INFO -   Learning rate: 2e-5
+2025-11-11 17:02:47,205 - INFO -   Batch size: 8
+2025-11-11 17:02:47,205 - INFO -   Epochs: 4
+2025-11-11 17:02:47,205 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:02:47,215 - INFO -   Device: GPU
+2025-11-11 17:02:47,359 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:07:32,671 - INFO -  Training completed in 4.76 minutes (285.31s)
+2025-11-11 17:07:32,671 - INFO - Saving model to: ../outputs/models/electra_imdb
+2025-11-11 17:07:33,149 - INFO - Model saved in 0.48s
+2025-11-11 17:07:33,149 - INFO - Evaluating on validation set...
+2025-11-11 17:07:35,686 - INFO - Validation evaluation completed in 2.54s
+2025-11-11 17:07:35,686 - INFO - Results:
+2025-11-11 17:07:35,686 - INFO -   -- Macro-F1:    0.9393
+2025-11-11 17:07:35,686 - INFO -   -- Weighted-F1: 0.9393
+2025-11-11 17:07:35,686 - INFO -   -- Accuracy:    0.9393
+2025-11-11 17:07:35,694 - INFO - 
+================================================================================
+2025-11-11 17:07:35,694 - INFO - TRAINING COMPLETED: ELECTRA on IMDB
+2025-11-11 17:07:35,694 - INFO - Total Pipeline Time: 4.85 minutes (291.13s)
+2025-11-11 17:07:35,695 - INFO - 
+Timing Breakdown:
+2025-11-11 17:07:35,695 - INFO -   Model Load:          1.46s
+2025-11-11 17:07:35,695 - INFO -   Data Load:           0.12s
+2025-11-11 17:07:35,695 - INFO -   Tokenization:        1.07s
+2025-11-11 17:07:35,695 - INFO -   Training:          285.31s (4.8 min)  ← MAIN TIMING
+2025-11-11 17:07:35,695 - INFO -   Evaluation:          2.54s
+2025-11-11 17:07:35,695 - INFO -   Model Save:          0.48s
+2025-11-11 17:07:35,695 - INFO - ================================================================================
+
+2025-11-11 17:07:35,884 - INFO - 
+================================================================================
+2025-11-11 17:07:35,884 - INFO - START TRAINING: ELECTRA on REDDIT
+2025-11-11 17:07:35,884 - INFO - Timestamp: 2025-11-11 17:07:35
+2025-11-11 17:07:35,884 - INFO - GPU Available: True
+2025-11-11 17:07:35,884 - INFO - ================================================================================
+2025-11-11 17:07:35,884 - INFO - Loading model and tokenizer: google/electra-base-discriminator
+2025-11-11 17:07:37,955 - INFO -  Model & Tokenizer loaded in 2.07s
+2025-11-11 17:07:37,955 - INFO - Loading datasets: reddit
+2025-11-11 17:07:37,998 - INFO -  Datasets loaded in 0.04s
+2025-11-11 17:07:37,999 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 17:07:37,999 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:07:38,742 - INFO -  Tokenization completed in 0.74s
+2025-11-11 17:07:38,742 - INFO - Setting up training configuration:
+2025-11-11 17:07:38,742 - INFO -   Learning rate: 2e-5
+2025-11-11 17:07:38,742 - INFO -   Batch size: 8
+2025-11-11 17:07:38,742 - INFO -   Epochs: 4
+2025-11-11 17:07:38,742 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:07:38,742 - INFO -   Device: GPU
+2025-11-11 17:07:38,894 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:12:20,452 - INFO -  Training completed in 4.69 minutes (281.56s)
+2025-11-11 17:12:20,452 - INFO - Saving model to: ../outputs/models/electra_reddit
+2025-11-11 17:12:20,956 - INFO - Model saved in 0.50s
+2025-11-11 17:12:20,956 - INFO - Evaluating on validation set...
+2025-11-11 17:12:23,645 - INFO - Validation evaluation completed in 2.69s
+2025-11-11 17:12:23,645 - INFO - Results:
+2025-11-11 17:12:23,645 - INFO -   -- Macro-F1:    0.4131
+2025-11-11 17:12:23,645 - INFO -   -- Weighted-F1: 0.4132
+2025-11-11 17:12:23,645 - INFO -   -- Accuracy:    0.4216
+2025-11-11 17:12:23,649 - INFO - 
+================================================================================
+2025-11-11 17:12:23,649 - INFO - TRAINING COMPLETED: ELECTRA on REDDIT
+2025-11-11 17:12:23,649 - INFO - Total Pipeline Time: 4.80 minutes (287.77s)
+2025-11-11 17:12:23,649 - INFO - 
+Timing Breakdown:
+2025-11-11 17:12:23,649 - INFO -   Model Load:          2.07s
+2025-11-11 17:12:23,649 - INFO -   Data Load:           0.04s
+2025-11-11 17:12:23,649 - INFO -   Tokenization:        0.74s
+2025-11-11 17:12:23,649 - INFO -   Training:          281.56s (4.7 min)  ← MAIN TIMING
+2025-11-11 17:12:23,650 - INFO -   Evaluation:          2.69s
+2025-11-11 17:12:23,650 - INFO -   Model Save:          0.50s
+2025-11-11 17:12:23,650 - INFO - ================================================================================
+
+2025-11-11 17:12:23,846 - INFO - 
+================================================================================
+2025-11-11 17:12:23,846 - INFO - START TRAINING: ELECTRA on SENTIMENT140
+2025-11-11 17:12:23,846 - INFO - Timestamp: 2025-11-11 17:12:23
+2025-11-11 17:12:23,846 - INFO - GPU Available: True
+2025-11-11 17:12:23,846 - INFO - ================================================================================
+2025-11-11 17:12:23,846 - INFO - Loading model and tokenizer: google/electra-base-discriminator
+2025-11-11 17:12:26,123 - INFO -  Model & Tokenizer loaded in 2.28s
+2025-11-11 17:12:26,123 - INFO - Loading datasets: sentiment140
+2025-11-11 17:12:26,179 - INFO -  Datasets loaded in 0.06s
+2025-11-11 17:12:26,179 - INFO -   Train samples: 5394 | Val samples: 675
+2025-11-11 17:12:26,179 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:12:27,020 - INFO -  Tokenization completed in 0.84s
+2025-11-11 17:12:27,020 - INFO - Setting up training configuration:
+2025-11-11 17:12:27,020 - INFO -   Learning rate: 2e-5
+2025-11-11 17:12:27,020 - INFO -   Batch size: 8
+2025-11-11 17:12:27,020 - INFO -   Epochs: 4
+2025-11-11 17:12:27,020 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:12:27,020 - INFO -   Device: GPU
+2025-11-11 17:12:27,186 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:17:07,684 - INFO -  Training completed in 4.67 minutes (280.50s)
+2025-11-11 17:17:07,684 - INFO - Saving model to: ../outputs/models/electra_sentiment140
+2025-11-11 17:17:08,179 - INFO - Model saved in 0.50s
+2025-11-11 17:17:08,179 - INFO - Evaluating on validation set...
+2025-11-11 17:17:10,698 - INFO - Validation evaluation completed in 2.52s
+2025-11-11 17:17:10,698 - INFO - Results:
+2025-11-11 17:17:10,698 - INFO -   -- Macro-F1:    0.8459
+2025-11-11 17:17:10,698 - INFO -   -- Weighted-F1: 0.8459
+2025-11-11 17:17:10,698 - INFO -   -- Accuracy:    0.8459
+2025-11-11 17:17:10,703 - INFO - 
+================================================================================
+2025-11-11 17:17:10,703 - INFO - TRAINING COMPLETED: ELECTRA on SENTIMENT140
+2025-11-11 17:17:10,703 - INFO - Total Pipeline Time: 4.78 minutes (286.86s)
+2025-11-11 17:17:10,703 - INFO - 
+Timing Breakdown:
+2025-11-11 17:17:10,703 - INFO -   Model Load:          2.28s
+2025-11-11 17:17:10,703 - INFO -   Data Load:           0.06s
+2025-11-11 17:17:10,703 - INFO -   Tokenization:        0.84s
+2025-11-11 17:17:10,703 - INFO -   Training:          280.50s (4.7 min)  ← MAIN TIMING
+2025-11-11 17:17:10,703 - INFO -   Evaluation:          2.52s
+2025-11-11 17:17:10,704 - INFO -   Model Save:          0.50s
+2025-11-11 17:17:10,704 - INFO - ================================================================================
+
+2025-11-11 17:17:10,886 - INFO - 
+================================================================================
+2025-11-11 17:17:10,886 - INFO - START TRAINING: ROBERTA on AMAZON_COMBINED
+2025-11-11 17:17:10,886 - INFO - Timestamp: 2025-11-11 17:17:10
+2025-11-11 17:17:10,886 - INFO - GPU Available: True
+2025-11-11 17:17:10,886 - INFO - ================================================================================
+2025-11-11 17:17:10,886 - INFO - Loading model and tokenizer: roberta-base
+2025-11-11 17:17:12,835 - INFO -  Model & Tokenizer loaded in 1.95s
+2025-11-11 17:17:12,835 - INFO - Loading datasets: amazon_combined
+2025-11-11 17:17:12,886 - INFO -  Datasets loaded in 0.05s
+2025-11-11 17:17:12,886 - INFO -   Train samples: 5396 | Val samples: 675
+2025-11-11 17:17:12,887 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:17:13,479 - INFO -  Tokenization completed in 0.59s
+2025-11-11 17:17:13,479 - INFO - Setting up training configuration:
+2025-11-11 17:17:13,479 - INFO -   Learning rate: 2e-5
+2025-11-11 17:17:13,479 - INFO -   Batch size: 8
+2025-11-11 17:17:13,479 - INFO -   Epochs: 4
+2025-11-11 17:17:13,479 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:17:13,479 - INFO -   Device: GPU
+2025-11-11 17:17:14,322 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:21:26,164 - INFO -  Training completed in 4.20 minutes (251.84s)
+2025-11-11 17:21:26,164 - INFO - Saving model to: ../outputs/models/roberta_amazon_combined
+2025-11-11 17:21:26,709 - INFO - Model saved in 0.54s
+2025-11-11 17:21:26,709 - INFO - Evaluating on validation set...
+2025-11-11 17:21:28,691 - INFO - Validation evaluation completed in 1.98s
+2025-11-11 17:21:28,691 - INFO - Results:
+2025-11-11 17:21:28,691 - INFO -   -- Macro-F1:    0.7522
+2025-11-11 17:21:28,691 - INFO -   -- Weighted-F1: 0.7524
+2025-11-11 17:21:28,691 - INFO -   -- Accuracy:    0.7511
+2025-11-11 17:21:28,696 - INFO - 
+================================================================================
+2025-11-11 17:21:28,697 - INFO - TRAINING COMPLETED: ROBERTA on AMAZON_COMBINED
+2025-11-11 17:21:28,697 - INFO - Total Pipeline Time: 4.30 minutes (257.81s)
+2025-11-11 17:21:28,697 - INFO - 
+Timing Breakdown:
+2025-11-11 17:21:28,697 - INFO -   Model Load:          1.95s
+2025-11-11 17:21:28,697 - INFO -   Data Load:           0.05s
+2025-11-11 17:21:28,697 - INFO -   Tokenization:        0.59s
+2025-11-11 17:21:28,697 - INFO -   Training:          251.84s (4.2 min)  ← MAIN TIMING
+2025-11-11 17:21:28,697 - INFO -   Evaluation:          1.98s
+2025-11-11 17:21:28,697 - INFO -   Model Save:          0.54s
+2025-11-11 17:21:28,698 - INFO - ================================================================================
+
+2025-11-11 17:21:28,878 - INFO - 
+================================================================================
+2025-11-11 17:21:28,882 - INFO - START TRAINING: ROBERTA on IMDB
+2025-11-11 17:21:28,882 - INFO - Timestamp: 2025-11-11 17:21:28
+2025-11-11 17:21:28,882 - INFO - GPU Available: True
+2025-11-11 17:21:28,882 - INFO - ================================================================================
+2025-11-11 17:21:28,882 - INFO - Loading model and tokenizer: roberta-base
+2025-11-11 17:21:30,313 - INFO -  Model & Tokenizer loaded in 1.43s
+2025-11-11 17:21:30,313 - INFO - Loading datasets: imdb
+2025-11-11 17:21:30,426 - INFO -  Datasets loaded in 0.11s
+2025-11-11 17:21:30,426 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 17:21:30,426 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:21:31,379 - INFO -  Tokenization completed in 0.95s
+2025-11-11 17:21:31,379 - INFO - Setting up training configuration:
+2025-11-11 17:21:31,379 - INFO -   Learning rate: 2e-5
+2025-11-11 17:21:31,379 - INFO -   Batch size: 8
+2025-11-11 17:21:31,379 - INFO -   Epochs: 4
+2025-11-11 17:21:31,379 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:21:31,379 - INFO -   Device: GPU
+2025-11-11 17:21:31,726 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:25:45,951 - INFO -  Training completed in 4.24 minutes (254.23s)
+2025-11-11 17:25:45,951 - INFO - Saving model to: ../outputs/models/roberta_imdb
+2025-11-11 17:25:46,486 - INFO - Model saved in 0.54s
+2025-11-11 17:25:46,486 - INFO - Evaluating on validation set...
+2025-11-11 17:25:48,479 - INFO - Validation evaluation completed in 1.99s
+2025-11-11 17:25:48,479 - INFO - Results:
+2025-11-11 17:25:48,479 - INFO -   -- Macro-F1:    0.9364
+2025-11-11 17:25:48,479 - INFO -   -- Weighted-F1: 0.9364
+2025-11-11 17:25:48,479 - INFO -   -- Accuracy:    0.9364
+2025-11-11 17:25:48,482 - INFO - 
+================================================================================
+2025-11-11 17:25:48,482 - INFO - TRAINING COMPLETED: ROBERTA on IMDB
+2025-11-11 17:25:48,482 - INFO - Total Pipeline Time: 4.33 minutes (259.60s)
+2025-11-11 17:25:48,482 - INFO - 
+Timing Breakdown:
+2025-11-11 17:25:48,482 - INFO -   Model Load:          1.43s
+2025-11-11 17:25:48,482 - INFO -   Data Load:           0.11s
+2025-11-11 17:25:48,483 - INFO -   Tokenization:        0.95s
+2025-11-11 17:25:48,483 - INFO -   Training:          254.23s (4.2 min)  ← MAIN TIMING
+2025-11-11 17:25:48,483 - INFO -   Evaluation:          1.99s
+2025-11-11 17:25:48,483 - INFO -   Model Save:          0.54s
+2025-11-11 17:25:48,483 - INFO - ================================================================================
+
+2025-11-11 17:25:48,669 - INFO - 
+================================================================================
+2025-11-11 17:25:48,669 - INFO - START TRAINING: ROBERTA on REDDIT
+2025-11-11 17:25:48,669 - INFO - Timestamp: 2025-11-11 17:25:48
+2025-11-11 17:25:48,669 - INFO - GPU Available: True
+2025-11-11 17:25:48,669 - INFO - ================================================================================
+2025-11-11 17:25:48,669 - INFO - Loading model and tokenizer: roberta-base
+2025-11-11 17:25:50,516 - INFO -  Model & Tokenizer loaded in 1.85s
+2025-11-11 17:25:50,516 - INFO - Loading datasets: reddit
+2025-11-11 17:25:50,551 - INFO -  Datasets loaded in 0.04s
+2025-11-11 17:25:50,551 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 17:25:50,551 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:25:51,172 - INFO -  Tokenization completed in 0.62s
+2025-11-11 17:25:51,172 - INFO - Setting up training configuration:
+2025-11-11 17:25:51,172 - INFO -   Learning rate: 2e-5
+2025-11-11 17:25:51,172 - INFO -   Batch size: 8
+2025-11-11 17:25:51,172 - INFO -   Epochs: 4
+2025-11-11 17:25:51,182 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:25:51,182 - INFO -   Device: GPU
+2025-11-11 17:25:51,586 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:30:07,196 - INFO -  Training completed in 4.26 minutes (255.61s)
+2025-11-11 17:30:07,196 - INFO - Saving model to: ../outputs/models/roberta_reddit
+2025-11-11 17:30:07,763 - INFO - Model saved in 0.57s
+2025-11-11 17:30:07,763 - INFO - Evaluating on validation set...
+2025-11-11 17:30:09,816 - INFO - Validation evaluation completed in 2.05s
+2025-11-11 17:30:09,816 - INFO - Results:
+2025-11-11 17:30:09,816 - INFO -   -- Macro-F1:    0.4321
+2025-11-11 17:30:09,816 - INFO -   -- Weighted-F1: 0.4322
+2025-11-11 17:30:09,821 - INFO -   -- Accuracy:    0.4334
+2025-11-11 17:30:09,822 - INFO - 
+================================================================================
+2025-11-11 17:30:09,822 - INFO - TRAINING COMPLETED: ROBERTA on REDDIT
+2025-11-11 17:30:09,823 - INFO - Total Pipeline Time: 4.35 minutes (261.15s)
+2025-11-11 17:30:09,823 - INFO - 
+Timing Breakdown:
+2025-11-11 17:30:09,824 - INFO -   Model Load:          1.85s
+2025-11-11 17:30:09,824 - INFO -   Data Load:           0.04s
+2025-11-11 17:30:09,824 - INFO -   Tokenization:        0.62s
+2025-11-11 17:30:09,824 - INFO -   Training:          255.61s (4.3 min)  ← MAIN TIMING
+2025-11-11 17:30:09,824 - INFO -   Evaluation:          2.05s
+2025-11-11 17:30:09,824 - INFO -   Model Save:          0.57s
+2025-11-11 17:30:09,824 - INFO - ================================================================================
+
+2025-11-11 17:30:10,016 - INFO - 
+================================================================================
+2025-11-11 17:30:10,016 - INFO - START TRAINING: ROBERTA on SENTIMENT140
+2025-11-11 17:30:10,016 - INFO - Timestamp: 2025-11-11 17:30:10
+2025-11-11 17:30:10,016 - INFO - GPU Available: True
+2025-11-11 17:30:10,016 - INFO - ================================================================================
+2025-11-11 17:30:10,016 - INFO - Loading model and tokenizer: roberta-base
+2025-11-11 17:30:11,850 - INFO -  Model & Tokenizer loaded in 1.83s
+2025-11-11 17:30:11,850 - INFO - Loading datasets: sentiment140
+2025-11-11 17:30:11,890 - INFO -  Datasets loaded in 0.04s
+2025-11-11 17:30:11,890 - INFO -   Train samples: 5394 | Val samples: 675
+2025-11-11 17:30:11,891 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:30:12,451 - INFO -  Tokenization completed in 0.56s
+2025-11-11 17:30:12,451 - INFO - Setting up training configuration:
+2025-11-11 17:30:12,451 - INFO -   Learning rate: 2e-5
+2025-11-11 17:30:12,451 - INFO -   Batch size: 8
+2025-11-11 17:30:12,451 - INFO -   Epochs: 4
+2025-11-11 17:30:12,451 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:30:12,451 - INFO -   Device: GPU
+2025-11-11 17:30:12,812 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:34:24,288 - INFO -  Training completed in 4.19 minutes (251.48s)
+2025-11-11 17:34:24,288 - INFO - Saving model to: ../outputs/models/roberta_sentiment140
+2025-11-11 17:34:24,812 - INFO - Model saved in 0.52s
+2025-11-11 17:34:24,812 - INFO - Evaluating on validation set...
+2025-11-11 17:34:26,766 - INFO - Validation evaluation completed in 1.95s
+2025-11-11 17:34:26,766 - INFO - Results:
+2025-11-11 17:34:26,766 - INFO -   -- Macro-F1:    0.8488
+2025-11-11 17:34:26,766 - INFO -   -- Weighted-F1: 0.8488
+2025-11-11 17:34:26,766 - INFO -   -- Accuracy:    0.8489
+2025-11-11 17:34:26,772 - INFO - 
+================================================================================
+2025-11-11 17:34:26,772 - INFO - TRAINING COMPLETED: ROBERTA on SENTIMENT140
+2025-11-11 17:34:26,772 - INFO - Total Pipeline Time: 4.28 minutes (256.75s)
+2025-11-11 17:34:26,772 - INFO - 
+Timing Breakdown:
+2025-11-11 17:34:26,773 - INFO -   Model Load:          1.83s
+2025-11-11 17:34:26,773 - INFO -   Data Load:           0.04s
+2025-11-11 17:34:26,773 - INFO -   Tokenization:        0.56s
+2025-11-11 17:34:26,773 - INFO -   Training:          251.48s (4.2 min)  ← MAIN TIMING
+2025-11-11 17:34:26,773 - INFO -   Evaluation:          1.95s
+2025-11-11 17:34:26,773 - INFO -   Model Save:          0.52s
+2025-11-11 17:34:26,773 - INFO - ================================================================================
+
+2025-11-11 17:34:26,959 - INFO - 
+================================================================================
+2025-11-11 17:34:26,959 - INFO - START TRAINING: XLNET on AMAZON_COMBINED
+2025-11-11 17:34:26,959 - INFO - Timestamp: 2025-11-11 17:34:26
+2025-11-11 17:34:26,959 - INFO - GPU Available: True
+2025-11-11 17:34:26,959 - INFO - ================================================================================
+2025-11-11 17:34:26,959 - INFO - Loading model and tokenizer: xlnet-base-cased
+2025-11-11 17:34:29,230 - INFO -  Model & Tokenizer loaded in 2.27s
+2025-11-11 17:34:29,231 - INFO - Loading datasets: amazon_combined
+2025-11-11 17:34:29,261 - INFO -  Datasets loaded in 0.03s
+2025-11-11 17:34:29,261 - INFO -   Train samples: 5396 | Val samples: 675
+2025-11-11 17:34:29,261 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:34:30,016 - INFO -  Tokenization completed in 0.75s
+2025-11-11 17:34:30,016 - INFO - Setting up training configuration:
+2025-11-11 17:34:30,020 - INFO -   Learning rate: 2e-5
+2025-11-11 17:34:30,020 - INFO -   Batch size: 8
+2025-11-11 17:34:30,020 - INFO -   Epochs: 4
+2025-11-11 17:34:30,020 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:34:30,020 - INFO -   Device: GPU
+2025-11-11 17:34:30,163 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:40:56,074 - INFO -  Training completed in 6.43 minutes (385.91s)
+2025-11-11 17:40:56,074 - INFO - Saving model to: ../outputs/models/xlnet_amazon_combined
+2025-11-11 17:40:56,486 - INFO - Model saved in 0.41s
+2025-11-11 17:40:56,486 - INFO - Evaluating on validation set...
+2025-11-11 17:41:00,237 - INFO - Validation evaluation completed in 3.75s
+2025-11-11 17:41:00,238 - INFO - Results:
+2025-11-11 17:41:00,238 - INFO -   -- Macro-F1:    0.7314
+2025-11-11 17:41:00,238 - INFO -   -- Weighted-F1: 0.7316
+2025-11-11 17:41:00,239 - INFO -   -- Accuracy:    0.7333
+2025-11-11 17:41:00,239 - INFO - 
+================================================================================
+2025-11-11 17:41:00,239 - INFO - TRAINING COMPLETED: XLNET on AMAZON_COMBINED
+2025-11-11 17:41:00,239 - INFO - Total Pipeline Time: 6.55 minutes (393.28s)
+2025-11-11 17:41:00,239 - INFO - 
+Timing Breakdown:
+2025-11-11 17:41:00,239 - INFO -   Model Load:          2.27s
+2025-11-11 17:41:00,239 - INFO -   Data Load:           0.03s
+2025-11-11 17:41:00,239 - INFO -   Tokenization:        0.75s
+2025-11-11 17:41:00,239 - INFO -   Training:          385.91s (6.4 min)  ← MAIN TIMING
+2025-11-11 17:41:00,239 - INFO -   Evaluation:          3.75s
+2025-11-11 17:41:00,239 - INFO -   Model Save:          0.41s
+2025-11-11 17:41:00,242 - INFO - ================================================================================
+
+2025-11-11 17:41:00,450 - INFO - 
+================================================================================
+2025-11-11 17:41:00,450 - INFO - START TRAINING: XLNET on IMDB
+2025-11-11 17:41:00,450 - INFO - Timestamp: 2025-11-11 17:41:00
+2025-11-11 17:41:00,450 - INFO - GPU Available: True
+2025-11-11 17:41:00,450 - INFO - ================================================================================
+2025-11-11 17:41:00,450 - INFO - Loading model and tokenizer: xlnet-base-cased
+2025-11-11 17:41:03,784 - INFO -  Model & Tokenizer loaded in 3.33s
+2025-11-11 17:41:03,784 - INFO - Loading datasets: imdb
+2025-11-11 17:41:03,921 - INFO -  Datasets loaded in 0.14s
+2025-11-11 17:41:03,921 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 17:41:03,921 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:41:05,105 - INFO -  Tokenization completed in 1.18s
+2025-11-11 17:41:05,105 - INFO - Setting up training configuration:
+2025-11-11 17:41:05,109 - INFO -   Learning rate: 2e-5
+2025-11-11 17:41:05,109 - INFO -   Batch size: 8
+2025-11-11 17:41:05,109 - INFO -   Epochs: 4
+2025-11-11 17:41:05,109 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:41:05,109 - INFO -   Device: GPU
+2025-11-11 17:41:05,239 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:47:34,726 - INFO -  Training completed in 6.49 minutes (389.49s)
+2025-11-11 17:47:34,726 - INFO - Saving model to: ../outputs/models/xlnet_imdb
+2025-11-11 17:47:35,172 - INFO - Model saved in 0.45s
+2025-11-11 17:47:35,172 - INFO - Evaluating on validation set...
+2025-11-11 17:47:38,944 - INFO - Validation evaluation completed in 3.77s
+2025-11-11 17:47:38,944 - INFO - Results:
+2025-11-11 17:47:38,944 - INFO -   -- Macro-F1:    0.9349
+2025-11-11 17:47:38,944 - INFO -   -- Weighted-F1: 0.9349
+2025-11-11 17:47:38,944 - INFO -   -- Accuracy:    0.9349
+2025-11-11 17:47:38,947 - INFO - 
+================================================================================
+2025-11-11 17:47:38,947 - INFO - TRAINING COMPLETED: XLNET on IMDB
+2025-11-11 17:47:38,947 - INFO - Total Pipeline Time: 6.64 minutes (398.50s)
+2025-11-11 17:47:38,947 - INFO - 
+Timing Breakdown:
+2025-11-11 17:47:38,947 - INFO -   Model Load:          3.33s
+2025-11-11 17:47:38,948 - INFO -   Data Load:           0.14s
+2025-11-11 17:47:38,948 - INFO -   Tokenization:        1.18s
+2025-11-11 17:47:38,948 - INFO -   Training:          389.49s (6.5 min)  ← MAIN TIMING
+2025-11-11 17:47:38,948 - INFO -   Evaluation:          3.77s
+2025-11-11 17:47:38,948 - INFO -   Model Save:          0.45s
+2025-11-11 17:47:38,948 - INFO - ================================================================================
+
+2025-11-11 17:47:39,165 - INFO - 
+================================================================================
+2025-11-11 17:47:39,165 - INFO - START TRAINING: XLNET on REDDIT
+2025-11-11 17:47:39,165 - INFO - Timestamp: 2025-11-11 17:47:39
+2025-11-11 17:47:39,165 - INFO - GPU Available: True
+2025-11-11 17:47:39,165 - INFO - ================================================================================
+2025-11-11 17:47:39,165 - INFO - Loading model and tokenizer: xlnet-base-cased
+2025-11-11 17:47:42,748 - INFO -  Model & Tokenizer loaded in 3.58s
+2025-11-11 17:47:42,748 - INFO - Loading datasets: reddit
+2025-11-11 17:47:42,807 - INFO -  Datasets loaded in 0.06s
+2025-11-11 17:47:42,807 - INFO -   Train samples: 5404 | Val samples: 676
+2025-11-11 17:47:42,807 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:47:43,533 - INFO -  Tokenization completed in 0.73s
+2025-11-11 17:47:43,533 - INFO - Setting up training configuration:
+2025-11-11 17:47:43,533 - INFO -   Learning rate: 2e-5
+2025-11-11 17:47:43,533 - INFO -   Batch size: 8
+2025-11-11 17:47:43,533 - INFO -   Epochs: 4
+2025-11-11 17:47:43,533 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:47:43,533 - INFO -   Device: GPU
+2025-11-11 17:47:43,717 - INFO - 
+Starting training loop on GPU...
+2025-11-11 17:54:18,527 - INFO -  Training completed in 6.58 minutes (394.81s)
+2025-11-11 17:54:18,527 - INFO - Saving model to: ../outputs/models/xlnet_reddit
+2025-11-11 17:54:18,856 - INFO - Model saved in 0.33s
+2025-11-11 17:54:18,856 - INFO - Evaluating on validation set...
+2025-11-11 17:54:23,017 - INFO - Validation evaluation completed in 4.16s
+2025-11-11 17:54:23,017 - INFO - Results:
+2025-11-11 17:54:23,017 - INFO -   -- Macro-F1:    0.4021
+2025-11-11 17:54:23,017 - INFO -   -- Weighted-F1: 0.4023
+2025-11-11 17:54:23,019 - INFO -   -- Accuracy:    0.4157
+2025-11-11 17:54:23,020 - INFO - 
+================================================================================
+2025-11-11 17:54:23,021 - INFO - TRAINING COMPLETED: XLNET on REDDIT
+2025-11-11 17:54:23,021 - INFO - Total Pipeline Time: 6.73 minutes (403.85s)
+2025-11-11 17:54:23,021 - INFO - 
+Timing Breakdown:
+2025-11-11 17:54:23,021 - INFO -   Model Load:          3.58s
+2025-11-11 17:54:23,021 - INFO -   Data Load:           0.06s
+2025-11-11 17:54:23,021 - INFO -   Tokenization:        0.73s
+2025-11-11 17:54:23,021 - INFO -   Training:          394.81s (6.6 min)  ← MAIN TIMING
+2025-11-11 17:54:23,021 - INFO -   Evaluation:          4.16s
+2025-11-11 17:54:23,022 - INFO -   Model Save:          0.33s
+2025-11-11 17:54:23,022 - INFO - ================================================================================
+
+2025-11-11 17:54:23,214 - INFO - 
+================================================================================
+2025-11-11 17:54:23,214 - INFO - START TRAINING: XLNET on SENTIMENT140
+2025-11-11 17:54:23,214 - INFO - Timestamp: 2025-11-11 17:54:23
+2025-11-11 17:54:23,214 - INFO - GPU Available: True
+2025-11-11 17:54:23,214 - INFO - ================================================================================
+2025-11-11 17:54:23,214 - INFO - Loading model and tokenizer: xlnet-base-cased
+2025-11-11 17:54:26,547 - INFO -  Model & Tokenizer loaded in 3.33s
+2025-11-11 17:54:26,547 - INFO - Loading datasets: sentiment140
+2025-11-11 17:54:26,577 - INFO -  Datasets loaded in 0.03s
+2025-11-11 17:54:26,577 - INFO -   Train samples: 5394 | Val samples: 675
+2025-11-11 17:54:26,579 - INFO - Tokenizing datasets (max_length=256)
+2025-11-11 17:54:27,046 - INFO -  Tokenization completed in 0.47s
+2025-11-11 17:54:27,046 - INFO - Setting up training configuration:
+2025-11-11 17:54:27,046 - INFO -   Learning rate: 2e-5
+2025-11-11 17:54:27,046 - INFO -   Batch size: 8
+2025-11-11 17:54:27,046 - INFO -   Epochs: 4
+2025-11-11 17:54:27,046 - INFO -   Mixed precision (FP16): True
+2025-11-11 17:54:27,046 - INFO -   Device: GPU
+2025-11-11 17:54:27,149 - INFO - 
+Starting training loop on GPU...
+2025-11-11 18:01:42,881 - INFO -  Training completed in 7.26 minutes (435.73s)
+2025-11-11 18:01:42,883 - INFO - Saving model to: ../outputs/models/xlnet_sentiment140
+2025-11-11 18:01:43,256 - INFO - Model saved in 0.37s
+2025-11-11 18:01:43,256 - INFO - Evaluating on validation set...
+2025-11-11 18:01:47,439 - INFO - Validation evaluation completed in 4.18s
+2025-11-11 18:01:47,439 - INFO - Results:
+2025-11-11 18:01:47,439 - INFO -   -- Macro-F1:    0.8429
+2025-11-11 18:01:47,439 - INFO -   -- Weighted-F1: 0.8429
+2025-11-11 18:01:47,439 - INFO -   -- Accuracy:    0.8430
+2025-11-11 18:01:47,442 - INFO - 
+================================================================================
+2025-11-11 18:01:47,442 - INFO - TRAINING COMPLETED: XLNET on SENTIMENT140
+2025-11-11 18:01:47,442 - INFO - Total Pipeline Time: 7.40 minutes (444.23s)
+2025-11-11 18:01:47,442 - INFO - 
+Timing Breakdown:
+2025-11-11 18:01:47,442 - INFO -   Model Load:          3.33s
+2025-11-11 18:01:47,442 - INFO -   Data Load:           0.03s
+2025-11-11 18:01:47,443 - INFO -   Tokenization:        0.47s
+2025-11-11 18:01:47,443 - INFO -   Training:          435.73s (7.3 min)  ← MAIN TIMING
+2025-11-11 18:01:47,443 - INFO -   Evaluation:          4.18s
+2025-11-11 18:01:47,443 - INFO -   Model Save:          0.37s
+2025-11-11 18:01:47,443 - INFO - ================================================================================
+
+2025-11-11 18:01:47,674 - INFO -  Phase 1 completed in 109.02 minutes
+
+2025-11-11 18:01:47,674 - INFO - 
+================================================================================
+2025-11-11 18:01:47,674 - INFO - EXPERIMENT COMPLETED: IN-DOMAIN TRAINING
+2025-11-11 18:01:47,674 - INFO - Total Execution Time: 1.82 hours (109.02 minutes)
+2025-11-11 18:01:47,674 - INFO - Training Phase (24 runs: 6 models × 4 datasets): 109.02 minutes
+2025-11-11 18:01:47,674 - INFO - 
+Output files saved to:
+2025-11-11 18:01:47,674 - INFO -   Metrics Summary: ../outputs/results/metrics_summary.csv
+2025-11-11 18:01:47,674 - INFO -   Training Log: ../logs/training_log.txt
+2025-11-11 18:01:47,674 - INFO -   Model Checkpoints: ../outputs/models/
+2025-11-11 18:01:47,674 - INFO -   JSON Reports: ../outputs/reports/
+2025-11-11 18:01:47,674 - INFO - ================================================================================
+

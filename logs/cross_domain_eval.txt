@@ -1,0 +1,185 @@
+2025-11-11 18:08:16,221 - INFO - 
+================================================================================
+2025-11-11 18:08:16,221 - INFO - PHASE 2: CROSS-DOMAIN EVALUATION (72 runs)
+2025-11-11 18:08:16,221 - INFO - Time: 2025-11-11 18:08:16
+2025-11-11 18:08:16,260 - INFO - GPU Available: True
+2025-11-11 18:08:16,268 - INFO - GPU Name: NVIDIA GeForce RTX 5060 Laptop GPU
+2025-11-11 18:08:16,268 - INFO - GPU Memory: 8.55 GB
+2025-11-11 18:08:16,268 - INFO - ================================================================================
+
+2025-11-11 18:08:16,268 - INFO - 
+MODEL: ALBERT
+2025-11-11 18:08:16,269 - INFO - --------------------------------------------------------------------------------
+2025-11-11 18:08:16,269 - INFO -  Cross-domain: albert       (amazon_combined->imdb           )
+2025-11-11 18:08:23,914 - INFO -  | Macro-F1: 0.3500 | Time: 7.64s
+2025-11-11 18:08:24,072 - INFO -  Cross-domain: albert       (amazon_combined->reddit         )
+2025-11-11 18:08:31,092 - INFO -  | Macro-F1: 0.3539 | Time: 7.02s
+2025-11-11 18:08:31,237 - INFO -  Cross-domain: albert       (amazon_combined->sentiment140   )
+2025-11-11 18:08:38,297 - INFO -  | Macro-F1: 0.3087 | Time: 7.06s
+2025-11-11 18:08:38,442 - INFO -  Cross-domain: albert       (imdb           ->amazon_combined)
+2025-11-11 18:08:38,622 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:08:38,637 - INFO -  Cross-domain: albert       (imdb           ->reddit         )
+2025-11-11 18:08:38,757 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:08:38,774 - INFO -  Cross-domain: albert       (imdb           ->sentiment140   )
+2025-11-11 18:08:45,863 - INFO -  | Macro-F1: 0.6522 | Time: 7.09s
+2025-11-11 18:08:46,019 - INFO -  Cross-domain: albert       (reddit         ->amazon_combined)
+2025-11-11 18:08:53,072 - INFO -  | Macro-F1: 0.3161 | Time: 7.05s
+2025-11-11 18:08:53,223 - INFO -  Cross-domain: albert       (reddit         ->imdb           )
+2025-11-11 18:09:00,315 - INFO -  | Macro-F1: 0.3333 | Time: 7.09s
+2025-11-11 18:09:00,464 - INFO -  Cross-domain: albert       (reddit         ->sentiment140   )
+2025-11-11 18:09:07,449 - INFO -  | Macro-F1: 0.1293 | Time: 6.98s
+2025-11-11 18:09:07,594 - INFO -  Cross-domain: albert       (sentiment140   ->amazon_combined)
+2025-11-11 18:09:07,835 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:09:07,850 - INFO -  Cross-domain: albert       (sentiment140   ->imdb           )
+2025-11-11 18:09:15,086 - INFO -  | Macro-F1: 0.7489 | Time: 7.24s
+2025-11-11 18:09:15,250 - INFO -  Cross-domain: albert       (sentiment140   ->reddit         )
+2025-11-11 18:09:15,377 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:09:15,390 - INFO - 
+MODEL: BERT
+2025-11-11 18:09:15,390 - INFO - --------------------------------------------------------------------------------
+2025-11-11 18:09:15,391 - INFO -  Cross-domain: bert         (amazon_combined->imdb           )
+2025-11-11 18:09:22,074 - INFO -  | Macro-F1: 0.3610 | Time: 6.68s
+2025-11-11 18:09:22,221 - INFO -  Cross-domain: bert         (amazon_combined->reddit         )
+2025-11-11 18:09:28,306 - INFO -  | Macro-F1: 0.3519 | Time: 6.08s
+2025-11-11 18:09:28,452 - INFO -  Cross-domain: bert         (amazon_combined->sentiment140   )
+2025-11-11 18:09:34,752 - INFO -  | Macro-F1: 0.3293 | Time: 6.30s
+2025-11-11 18:09:34,901 - INFO -  Cross-domain: bert         (imdb           ->amazon_combined)
+2025-11-11 18:09:35,114 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:09:35,119 - INFO -  Cross-domain: bert         (imdb           ->reddit         )
+2025-11-11 18:09:35,230 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:09:35,235 - INFO -  Cross-domain: bert         (imdb           ->sentiment140   )
+2025-11-11 18:09:41,619 - INFO -  | Macro-F1: 0.7028 | Time: 6.39s
+2025-11-11 18:09:41,769 - INFO -  Cross-domain: bert         (reddit         ->amazon_combined)
+2025-11-11 18:09:47,856 - INFO -  | Macro-F1: 0.3470 | Time: 6.09s
+2025-11-11 18:09:47,999 - INFO -  Cross-domain: bert         (reddit         ->imdb           )
+2025-11-11 18:09:54,143 - INFO -  | Macro-F1: 0.2505 | Time: 6.14s
+2025-11-11 18:09:54,298 - INFO -  Cross-domain: bert         (reddit         ->sentiment140   )
+2025-11-11 18:10:00,339 - INFO -  | Macro-F1: 0.1683 | Time: 6.04s
+2025-11-11 18:10:00,490 - INFO -  Cross-domain: bert         (sentiment140   ->amazon_combined)
+2025-11-11 18:10:00,632 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:10:00,635 - INFO -  Cross-domain: bert         (sentiment140   ->imdb           )
+2025-11-11 18:10:06,777 - INFO -  | Macro-F1: 0.7553 | Time: 6.14s
+2025-11-11 18:10:06,929 - INFO -  Cross-domain: bert         (sentiment140   ->reddit         )
+2025-11-11 18:10:07,036 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:10:07,046 - INFO - 
+MODEL: DISTILBERT
+2025-11-11 18:10:07,047 - INFO - --------------------------------------------------------------------------------
+2025-11-11 18:10:07,047 - INFO -  Cross-domain: distilbert   (amazon_combined->imdb           )
+2025-11-11 18:10:10,361 - INFO -  | Macro-F1: 0.3112 | Time: 3.31s
+2025-11-11 18:10:10,501 - INFO -  Cross-domain: distilbert   (amazon_combined->reddit         )
+2025-11-11 18:10:13,688 - INFO -  | Macro-F1: 0.3754 | Time: 3.19s
+2025-11-11 18:10:13,828 - INFO -  Cross-domain: distilbert   (amazon_combined->sentiment140   )
+2025-11-11 18:10:17,000 - INFO -  | Macro-F1: 0.3210 | Time: 3.17s
+2025-11-11 18:10:17,146 - INFO -  Cross-domain: distilbert   (imdb           ->amazon_combined)
+2025-11-11 18:10:17,266 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:10:17,267 - INFO -  Cross-domain: distilbert   (imdb           ->reddit         )
+2025-11-11 18:10:17,359 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:10:17,363 - INFO -  Cross-domain: distilbert   (imdb           ->sentiment140   )
+2025-11-11 18:10:20,518 - INFO -  | Macro-F1: 0.6933 | Time: 3.15s
+2025-11-11 18:10:20,673 - INFO -  Cross-domain: distilbert   (reddit         ->amazon_combined)
+2025-11-11 18:10:23,878 - INFO -  | Macro-F1: 0.3940 | Time: 3.21s
+2025-11-11 18:10:24,030 - INFO -  Cross-domain: distilbert   (reddit         ->imdb           )
+2025-11-11 18:10:27,284 - INFO -  | Macro-F1: 0.2231 | Time: 3.25s
+2025-11-11 18:10:27,425 - INFO -  Cross-domain: distilbert   (reddit         ->sentiment140   )
+2025-11-11 18:10:30,583 - INFO -  | Macro-F1: 0.1599 | Time: 3.16s
+2025-11-11 18:10:30,723 - INFO -  Cross-domain: distilbert   (sentiment140   ->amazon_combined)
+2025-11-11 18:10:30,847 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:10:30,851 - INFO -  Cross-domain: distilbert   (sentiment140   ->imdb           )
+2025-11-11 18:10:34,082 - INFO -  | Macro-F1: 0.7417 | Time: 3.23s
+2025-11-11 18:10:34,235 - INFO -  Cross-domain: distilbert   (sentiment140   ->reddit         )
+2025-11-11 18:10:34,326 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:10:34,332 - INFO - 
+MODEL: ELECTRA
+2025-11-11 18:10:34,332 - INFO - --------------------------------------------------------------------------------
+2025-11-11 18:10:34,332 - INFO -  Cross-domain: electra      (amazon_combined->imdb           )
+2025-11-11 18:10:41,308 - INFO -  | Macro-F1: 0.3595 | Time: 6.98s
+2025-11-11 18:10:41,463 - INFO -  Cross-domain: electra      (amazon_combined->reddit         )
+2025-11-11 18:10:48,646 - INFO -  | Macro-F1: 0.3847 | Time: 7.18s
+2025-11-11 18:10:48,804 - INFO -  Cross-domain: electra      (amazon_combined->sentiment140   )
+2025-11-11 18:10:55,946 - INFO -  | Macro-F1: 0.2782 | Time: 7.14s
+2025-11-11 18:10:56,090 - INFO -  Cross-domain: electra      (imdb           ->amazon_combined)
+2025-11-11 18:10:56,240 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:10:56,244 - INFO -  Cross-domain: electra      (imdb           ->reddit         )
+2025-11-11 18:10:56,355 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:10:56,360 - INFO -  Cross-domain: electra      (imdb           ->sentiment140   )
+2025-11-11 18:11:03,172 - INFO -  | Macro-F1: 0.6579 | Time: 6.81s
+2025-11-11 18:11:03,323 - INFO -  Cross-domain: electra      (reddit         ->amazon_combined)
+2025-11-11 18:11:10,135 - INFO -  | Macro-F1: 0.2769 | Time: 6.81s
+2025-11-11 18:11:10,274 - INFO -  Cross-domain: electra      (reddit         ->imdb           )
+2025-11-11 18:11:17,237 - INFO -  | Macro-F1: 0.1941 | Time: 6.96s
+2025-11-11 18:11:17,453 - INFO -  Cross-domain: electra      (reddit         ->sentiment140   )
+2025-11-11 18:11:24,136 - INFO -  | Macro-F1: 0.1018 | Time: 6.68s
+2025-11-11 18:11:24,288 - INFO -  Cross-domain: electra      (sentiment140   ->amazon_combined)
+2025-11-11 18:11:24,428 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:11:24,433 - INFO -  Cross-domain: electra      (sentiment140   ->imdb           )
+2025-11-11 18:11:31,293 - INFO -  | Macro-F1: 0.8311 | Time: 6.86s
+2025-11-11 18:11:31,447 - INFO -  Cross-domain: electra      (sentiment140   ->reddit         )
+2025-11-11 18:11:31,576 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:11:31,587 - INFO - 
+MODEL: ROBERTA
+2025-11-11 18:11:31,588 - INFO - --------------------------------------------------------------------------------
+2025-11-11 18:11:31,588 - INFO -  Cross-domain: roberta      (amazon_combined->imdb           )
+2025-11-11 18:11:38,086 - INFO -  | Macro-F1: 0.3774 | Time: 6.50s
+2025-11-11 18:11:38,243 - INFO -  Cross-domain: roberta      (amazon_combined->reddit         )
+2025-11-11 18:11:44,224 - INFO -  | Macro-F1: 0.3527 | Time: 5.98s
+2025-11-11 18:11:44,393 - INFO -  Cross-domain: roberta      (amazon_combined->sentiment140   )
+2025-11-11 18:11:50,321 - INFO -  | Macro-F1: 0.3009 | Time: 5.93s
+2025-11-11 18:11:50,478 - INFO -  Cross-domain: roberta      (imdb           ->amazon_combined)
+2025-11-11 18:11:50,681 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:11:50,687 - INFO -  Cross-domain: roberta      (imdb           ->reddit         )
+2025-11-11 18:11:50,860 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:11:50,867 - INFO -  Cross-domain: roberta      (imdb           ->sentiment140   )
+2025-11-11 18:11:57,085 - INFO -  | Macro-F1: 0.7036 | Time: 6.22s
+2025-11-11 18:11:57,262 - INFO -  Cross-domain: roberta      (reddit         ->amazon_combined)
+2025-11-11 18:12:03,578 - INFO -  | Macro-F1: 0.2954 | Time: 6.32s
+2025-11-11 18:12:03,734 - INFO -  Cross-domain: roberta      (reddit         ->imdb           )
+2025-11-11 18:12:10,384 - INFO -  | Macro-F1: 0.1750 | Time: 6.65s
+2025-11-11 18:12:10,548 - INFO -  Cross-domain: roberta      (reddit         ->sentiment140   )
+2025-11-11 18:12:16,831 - INFO -  | Macro-F1: 0.1277 | Time: 6.28s
+2025-11-11 18:12:16,991 - INFO -  Cross-domain: roberta      (sentiment140   ->amazon_combined)
+2025-11-11 18:12:17,202 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:12:17,208 - INFO -  Cross-domain: roberta      (sentiment140   ->imdb           )
+2025-11-11 18:12:23,829 - INFO -  | Macro-F1: 0.7997 | Time: 6.62s
+2025-11-11 18:12:23,990 - INFO -  Cross-domain: roberta      (sentiment140   ->reddit         )
+2025-11-11 18:12:24,169 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:12:24,173 - INFO - 
+MODEL: XLNET
+2025-11-11 18:12:24,178 - INFO - --------------------------------------------------------------------------------
+2025-11-11 18:12:24,178 - INFO -  Cross-domain: xlnet        (amazon_combined->imdb           )
+2025-11-11 18:12:34,744 - INFO -  | Macro-F1: 0.3914 | Time: 10.57s
+2025-11-11 18:12:34,941 - INFO -  Cross-domain: xlnet        (amazon_combined->reddit         )
+2025-11-11 18:12:45,328 - INFO -  | Macro-F1: 0.3647 | Time: 10.39s
+2025-11-11 18:12:45,499 - INFO -  Cross-domain: xlnet        (amazon_combined->sentiment140   )
+2025-11-11 18:12:55,735 - INFO -  | Macro-F1: 0.2702 | Time: 10.24s
+2025-11-11 18:12:55,929 - INFO -  Cross-domain: xlnet        (imdb           ->amazon_combined)
+2025-11-11 18:12:56,102 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:12:56,120 - INFO -  Cross-domain: xlnet        (imdb           ->reddit         )
+2025-11-11 18:12:56,259 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:12:56,276 - INFO -  Cross-domain: xlnet        (imdb           ->sentiment140   )
+2025-11-11 18:13:06,611 - INFO -  | Macro-F1: 0.6332 | Time: 10.33s
+2025-11-11 18:13:06,800 - INFO -  Cross-domain: xlnet        (reddit         ->amazon_combined)
+2025-11-11 18:13:17,452 - INFO -  | Macro-F1: 0.2518 | Time: 10.65s
+2025-11-11 18:13:17,658 - INFO -  Cross-domain: xlnet        (reddit         ->imdb           )
+2025-11-11 18:13:28,344 - INFO -  | Macro-F1: 0.2698 | Time: 10.69s
+2025-11-11 18:13:28,519 - INFO -  Cross-domain: xlnet        (reddit         ->sentiment140   )
+2025-11-11 18:13:38,758 - INFO -  | Macro-F1: 0.1410 | Time: 10.24s
+2025-11-11 18:13:38,940 - INFO -  Cross-domain: xlnet        (sentiment140   ->amazon_combined)
+2025-11-11 18:13:39,104 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=amazon_combined). Skipping evaluation.
+2025-11-11 18:13:39,121 - INFO -  Cross-domain: xlnet        (sentiment140   ->imdb           )
+2025-11-11 18:13:49,544 - INFO -  | Macro-F1: 0.7990 | Time: 10.42s
+2025-11-11 18:13:49,724 - INFO -  Cross-domain: xlnet        (sentiment140   ->reddit         )
+2025-11-11 18:13:49,865 - ERROR - Label mismatch: model expects 2 labels but test labels contain 2 (dataset=reddit). Skipping evaluation.
+2025-11-11 18:13:49,883 - INFO - 
+================================================================================
+2025-11-11 18:13:49,883 - INFO - PHASE 2: CROSS-DOMAIN EVALUATION - COMPLETED
+2025-11-11 18:13:49,884 - INFO - ================================================================================
+2025-11-11 18:13:49,884 - INFO - Total Execution Time: 5.56 minutes (333.61s)
+2025-11-11 18:13:49,884 - INFO - Success: 48/72 evaluations completed
+2025-11-11 18:13:49,884 - INFO - 
+Output files:
+2025-11-11 18:13:49,884 - INFO -  CSV Results:   ../outputs/results/cross_domain_results.csv
+2025-11-11 18:13:49,884 - INFO -  JSON Reports:  ../outputs/reports/
+2025-11-11 18:13:49,885 - INFO -  Log File:      ../logs/cross_domain_eval.txt
+2025-11-11 18:13:49,885 - INFO -  Model checkpoints: ../outputs/models/
+2025-11-11 18:13:49,885 - INFO - ================================================================================
+
