@@ -37,8 +37,8 @@ project-thesis-nlp-xdomain/
 │   └── sentiment_mappers.py     # Label mapping (Binary/Ternary standardization)
 │
 ├── outputs/                     # Experimental results & logs
-│   ├── metrics_summary.csv      # In-domain performance metrics (Table 1-5 in thesis)
-│   ├── cross_domain_results.csv # Cross-domain transfer metrics (Table 6-11 in thesis)
+    ├── metrics_summary.csv      # In-domain performance metrics (Table 1-5 in thesis)
+    ├── cross_domain_results.csv # Cross-domain transfer metrics (Table 6-11 in thesis)
     ├── training_log.txt         # Complete training logs
     ├── performance_gap.jpg      # In-domain vs Cross-domain comparison
     ├── transfer_heatmap.jpg     # Heatmap of cross-domain performance
