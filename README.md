@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 If you use this code or findings, please reference the thesis project:
 
-> Bhuiyan, S. (2025). *Evaluating Cross-Domain Adaptability of Transformer Models*. Master's Thesis, Fachhochschule Dortmund.
+> Bhuiyan, S. (2025). *Evaluating Cross-Domain Adaptability of Transformer Models: A Comparative Analysis of Social Media and Product Review Sentiments*. Research Project Thesis, Fachhochschule Dortmund.
 
 ---
 
